@@ -1,0 +1,123 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  margin-left: 400px;
+}
+
+
+
+.navbar-links button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 24px;
+  color: #afafaf;
+  cursor: pointer;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-links button:hover {
+  border-bottom: 2px solid #800000;
+  box-shadow: 0 3px 6px -3px rgba(128, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+}
+
+.navbar-logo {
+  height: 70px;
+  margin-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.navbar-location {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #afafaf;
+  letter-spacing: 0.5px;
+}
+
+.services-dropdown button.dropdown-toggle {
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 24px;
+  color: #afafaf;
+  cursor: pointer;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+}
+
+.services-dropdown button.dropdown-toggle:hover {
+  border-bottom: 2px solid #800000;
+}
+
+.dropdown-menu button.dropdown-item {
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  color: #afafaf;
+}
+
+.dropdown-menu button.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
