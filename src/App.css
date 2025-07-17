@@ -6,5 +6,32 @@ html, body {
 }
 
 
+.wrap-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wrap-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrap-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(229, 9, 20, 0.5);
+}
+
+.wrap-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
 
 

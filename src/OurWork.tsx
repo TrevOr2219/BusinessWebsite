@@ -1,6 +1,7 @@
 import React from "react";
 import "./OurWork.css";
 import ReactCompareImage from "react-compare-image";
+import WrapGallery from './WrapGallery.tsx';
 
 import step1 from "./assets/wrapping step1.png"
 import step2 from "./assets/step2.png"
@@ -54,6 +55,7 @@ export default function OurWork() {
       <div className="ourwork-header">
         <h2>Our Work</h2>
         <p>See the difference quality makes.</p>
+        <WrapGallery />
       </div>
 
       <div className="work-section">
@@ -67,7 +69,7 @@ export default function OurWork() {
                     leftImage={item.before}
                     rightImage={item.after}
                     sliderPositionPercentage={0.5}
-                    alt={item.title}
+                    
                   />
                 </div>
               ) : (
@@ -93,7 +95,7 @@ export default function OurWork() {
                     leftImage={item.before}
                     rightImage={item.after}
                     sliderPositionPercentage={0.5}
-                    alt={item.title}
+                    
                   />
                 </div>
               ) : (

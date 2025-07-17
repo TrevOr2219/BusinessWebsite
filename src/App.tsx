@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Tinting from './Tinting';
+import Navbar from './Navbar.js';
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import Tinting from './Tinting.js';
 import Wraping from './Wrapping.js';
 import "./App.css";
-import OurWork from './OurWork.js';
-import Footer from "./Footer";
+import OurWork from './OurWork.tsx';
+import Footer from "./Footer.js";
 
 function App() {
   const [page, setPage] = useState('home');
