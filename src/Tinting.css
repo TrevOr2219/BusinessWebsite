@@ -1,0 +1,191 @@
+
+.tinting-page {
+  background-color: #111;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tinting-header-bg {
+  width: 100vw;
+  background-image: url("./assets/bmwp.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.tinting-container {
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+
+.tinting-container h2 {
+  font-size: 3.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  color: #afafaf;
+  position: relative;
+}
+
+.tinting-container h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 3px;
+  background-color: #e50914;
+  border-radius: 2px;
+}
+
+.tinting-button h2 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #8b0000;
+}
+
+.tinting-container h3 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #afafaf;
+}
+
+.first {
+  color: #afafaf !important;
+  
+}
+
+
+
+.tint-warning {
+  background-color: rgba(32, 32, 32, 0.788);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 19.3px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  color: rgb(143, 1, 1);
+}
+
+.tinting-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+}
+
+.tinting-container ul li {
+  font-size: 1.8rem;
+  margin: 4px 5px;
+  padding-left: 24px;
+  text-align: left;
+  position: relative;
+  color: #afafaf;
+}
+
+.tinting-container ul li::before {
+  content: "✔";
+  position: absolute;
+  left: -20px;
+  color: #e50914;
+  font-weight: bold;
+}
+
+
+.quote-button {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 30px;
+  background-color: #2e2e2e;
+  color: #afafaf;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+  
+  
+  user-select: none;
+}
+
+.quote-button:hover {
+  background-color: #ff2a2a;
+  transform: translateY(-2px);
+}
+
+
+.tinting-button {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px 30px;
+  color: #afafaf;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 47px;
+  position: relative;
+  user-select: none;
+}
+
+.tinting-button h2,
+.tinting-heading {
+  color: #afafaf;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tinting-button h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 3px;
+  background-color: #e50914;
+  border-radius: 2px;
+}
+
+
+
+.tinting-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  color: #eee;
+  margin-top: 12px;
+}
+
+.tinting-benefits li {
+  margin-bottom: 10px;
+}
